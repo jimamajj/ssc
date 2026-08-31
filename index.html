@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="th">
-<head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>คู่มือผ่าตัดปลอดภัย</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Sarabun:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap">
 
 <style>
 /* ---------- tokens : light ---------- */
@@ -311,7 +310,17 @@ figcaption b{color:var(--ink-2)}
   .shell{display:block}
   body{background:#fff;font-size:11.5pt}
   section{break-inside:auto;page-break-inside:auto;margin-bottom:26px}
-  .phase,.note,figure,.tw{break-inside:avoid;box-shadow:none}
+  section{break-before:page;page-break-before:always}
+  section#c1{break-before:auto;page-break-before:auto}
+  .h-ch,h3{break-after:avoid;page-break-after:avoid}
+  .phase,.note{break-inside:avoid;box-shadow:none}
+  .tw{break-inside:auto;page-break-inside:auto;overflow:visible;box-shadow:none}
+  .tw table{break-inside:auto}
+  thead{display:table-header-group}
+  tr{break-inside:avoid;page-break-inside:avoid}
+  #a2 table.grid th,#a2 table.grid td{padding:6px 10px}
+  figure{break-inside:avoid;break-before:page;page-break-before:always;box-shadow:none}
+  figure img{max-height:23cm;width:auto;max-width:100%;margin:0 auto;display:block}
   .masthead{padding:0 0 18px;margin-bottom:24px}
   .wrap{max-width:none;padding:0}
 }
@@ -331,25 +340,25 @@ figcaption b{color:var(--ink-2)}
     <span class="s">งานการพยาบาลผู้ป่วยห้องผ่าตัด<br>โรงพยาบาลพระนครศรีอยุธยา</span>
   </div>
   <div class="finder">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
     <input id="q" type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ">
   </div>
   <nav aria-label="สารบัญ">
     <ol id="toc">
-      <li><a href="#c1"><span class="n">1</span>บทนำ</a></li>
-      <li><a href="#c2"><span class="n">2</span>หลักการสำคัญ 6 ข้อ</a></li>
-      <li><a href="#c3"><span class="n">3</span>บทบาทของแต่ละวิชาชีพ</a></li>
-      <li><a href="#c4"><span class="n">4</span>วิธีใช้แบบตรวจสอบ</a></li>
-      <li class="sub"><a href="#p1"><span class="n">4.1</span>Sign In</a></li>
-      <li class="sub"><a href="#p2"><span class="n">4.2</span>Time Out</a></li>
-      <li class="sub"><a href="#p3"><span class="n">4.3</span>Sign Out</a></li>
-      <li><a href="#c5"><span class="n">5</span>การผ่าตัดฉุกเฉิน</a></li>
-      <li><a href="#c6"><span class="n">6</span>สถานการณ์ที่พบบ่อย</a></li>
-      <li><a href="#c7"><span class="n">7</span>การนิเทศและติดตามผล</a></li>
+      <li><a href="#c1" class=""><span class="n">1</span>บทนำ</a></li>
+      <li><a href="#c2" class=""><span class="n">2</span>หลักการสำคัญ 6 ข้อ</a></li>
+      <li><a href="#c3" class=""><span class="n">3</span>บทบาทของแต่ละวิชาชีพ</a></li>
+      <li><a href="#c4" class=""><span class="n">4</span>วิธีใช้แบบตรวจสอบ</a></li>
+      <li class="sub"><a href="#p1" class=""><span class="n">4.1</span>Sign In</a></li>
+      <li class="sub"><a href="#p2" class=""><span class="n">4.2</span>Time Out</a></li>
+      <li class="sub"><a href="#p3" class=""><span class="n">4.3</span>Sign Out</a></li>
+      <li><a href="#c5" class=""><span class="n">5</span>การผ่าตัดฉุกเฉิน</a></li>
+      <li><a href="#c6" class=""><span class="n">6</span>สถานการณ์ที่พบบ่อย</a></li>
+      <li><a href="#c7" class=""><span class="n">7</span>การนิเทศและติดตามผล</a></li>
       <li class="grp eyebrow">ภาคผนวก</li>
-      <li><a href="#a1"><span class="n">ก</span>แบบฟอร์มฉบับฉุกเฉิน</a></li>
-      <li><a href="#a2"><span class="n">ข</span>แบบบันทึกการนิเทศ</a></li>
-      <li><a href="#ref"><span class="n">—</span>บรรณานุกรม</a></li>
+      <li><a href="#a1" class=""><span class="n">ก</span>แบบฟอร์มฉบับฉุกเฉิน</a></li>
+      <li><a href="#a2" class=""><span class="n">ข</span>แบบบันทึกการนิเทศ</a></li>
+      <li><a href="#ref" class=""><span class="n">—</span>บรรณานุกรม</a></li>
     </ol>
   </nav>
 </aside>
@@ -365,7 +374,7 @@ figcaption b{color:var(--ink-2)}
         <span class="chip">โรงพยาบาลพระนครศรีอยุธยา</span>
         <span class="chip">ฉบับปรับปรุง พ.ศ. 2570</span>
       </div>
-    </div>
+    <p class="nomatch hidden">ไม่พบข้อความที่ค้นหา</p></div>
   </header>
 
   <div class="wrap">
@@ -424,7 +433,7 @@ figcaption b{color:var(--ink-2)}
       <div class="principle"><div class="k">01</div><div><div class="t">ตรวจสอบก่อน ไม่ใช่บันทึกย้อนหลัง</div><div class="d">แบบฟอร์มนี้เป็นเครื่องมือกำกับการปฏิบัติ ไม่ใช่แบบบันทึกผลงาน ทุกรายการต้องทำเครื่องหมายในขณะที่กำลังตรวจสอบจริง ห้ามกรอกล่วงหน้าก่อนดำเนินการ และห้ามกรอกย้อนหลังรวดเดียวเมื่อผ่าตัดเสร็จ</div></div></div>
       <div class="principle"><div class="k">02</div><div><div class="t">ต้องกล่าวออกเสียง ไม่ใช่อ่านในใจ</div><div class="d">ประโยชน์หลักของแบบตรวจสอบเกิดจากการที่ทุกคนในห้องได้ยินข้อมูลเดียวกันพร้อมกัน หากมีผู้ใดได้ยินข้อมูลที่ไม่ตรงกับที่ตนทราบ จะสามารถทักท้วงได้ทันที การทำเครื่องหมายโดยไม่กล่าวออกเสียงจึงไม่ถือว่าปฏิบัติครบ</div></div></div>
       <div class="principle"><div class="k">03</div><div><div class="t">ทุกคนต้องหยุดและร่วมฟัง</div><div class="d">ในระยะ Time Out ทุกคนในห้องผ่าตัดต้องหยุดกิจกรรมที่ทำอยู่ชั่วคราวและร่วมฟัง ไม่ควรจัดเครื่องมือ เตรียมยา หรือสนทนาเรื่องอื่นระหว่างการยืนยัน</div></div></div>
-      <div class="principle"><div class="k">04</div><div><div class="t">มีผู้นำการตรวจสอบที่ชัดเจนในแต่ละระยะ</div><div class="d">Sign In นำโดยพยาบาลห้องผ่าตัดร่วมกับวิสัญญี &middot; Time Out นำโดยพยาบาลส่งเครื่องมือหรือพยาบาลช่วยรอบนอกเป็นผู้เริ่ม &middot; Sign Out นำโดยพยาบาลห้องผ่าตัด หากไม่มีผู้เริ่ม การตรวจสอบมักถูกข้ามไป</div></div></div>
+      <div class="principle"><div class="k">04</div><div><div class="t">มีผู้นำการตรวจสอบที่ชัดเจนในแต่ละระยะ</div><div class="d">Sign In นำโดยพยาบาลห้องผ่าตัดร่วมกับวิสัญญี · Time Out นำโดยพยาบาลส่งเครื่องมือหรือพยาบาลช่วยรอบนอกเป็นผู้เริ่ม · Sign Out นำโดยพยาบาลห้องผ่าตัด หากไม่มีผู้เริ่ม การตรวจสอบมักถูกข้ามไป</div></div></div>
       <div class="principle"><div class="k">05</div><div><div class="t">ทุกคนมีสิทธิ์หยุดกระบวนการ</div><div class="d">หากผู้ใดพบข้อมูลที่ไม่ตรงกันหรือมีข้อสงสัยด้านความปลอดภัย ไม่ว่าจะเป็นวิชาชีพใดหรืออาวุโสระดับใด สามารถขอให้หยุดกระบวนการเพื่อตรวจสอบได้ทันที และทีมต้องไม่ดำเนินการต่อจนกว่าข้อสงสัยจะได้รับการคลี่คลาย</div></div></div>
       <div class="principle"><div class="k">06</div><div><div class="t">ลงลายมือชื่อเมื่อจบแต่ละระยะ</div><div class="d">ผู้รับผิดชอบลงลายมือชื่อกำกับเมื่อสิ้นสุดแต่ละระยะ ห้ามลงลายมือชื่อล่วงหน้าหรือลงแทนผู้อื่น ลายมือชื่อนี้เป็นหลักฐานยืนยันว่าได้ปฏิบัติตามมาตรฐานวิชาชีพแล้ว และเป็นการคุ้มครองผู้ปฏิบัติงานเมื่อมีการทบทวนอุบัติการณ์</div></div></div>
     </div>
@@ -799,7 +808,7 @@ figcaption b{color:var(--ink-2)}
     <div class="tw" style="margin-top:14px">
       <table class="grid">
         <thead><tr><th>ลำดับ</th><th>HN / วันที่ผ่าตัด</th><th>สาขา / เวร</th><th>Sign In</th><th>Time Out</th><th>Sign Out</th><th>ลายมือชื่อครบ</th><th>สรุป</th></tr></thead>
-        <tbody id="auditrows"></tbody>
+        <tbody id="auditrows"><tr><td class="mono">1</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">2</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">3</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">4</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">5</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">6</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">7</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">8</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">9</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr><tr><td class="mono">10</td><td></td><td></td><td>☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr></tbody>
       </table>
     </div>
     <div class="note" style="margin-top:16px">
@@ -833,7 +842,7 @@ figcaption b{color:var(--ink-2)}
 (function(){
   // ---- audit table rows ----
   var tb = document.getElementById('auditrows');
-  for (var i = 1; i <= 10; i++) {
+  for (var i = 11; i <= 18; i++) {
     var tr = document.createElement('tr');
     var cells = ['<td class="mono">' + i + '</td>', '<td></td>', '<td></td>',
                  '<td>☐</td>', '<td>☐</td>', '<td>☐</td>', '<td>☐</td>', '<td>☐</td>'];
@@ -897,5 +906,6 @@ figcaption b{color:var(--ink-2)}
   });
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>

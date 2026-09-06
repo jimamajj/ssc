@@ -305,6 +305,11 @@ figcaption b{color:var(--ink-2)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
 
+/* ขอบกระดาษสำหรับพิมพ์เข้าเล่ม — ซ้าย 3.8 ซม. เผื่อสันเย็บ ตรงกับเล่มแนวคิด */
+@page{
+  size:A4;
+  margin:2.5cm 2.5cm 2cm 3.8cm;
+}
 @media print{
   .rail,.finder{display:none}
   .shell{display:block}
